@@ -1,0 +1,42 @@
+/* Feuille de style newsitePomme - Bicson */
+
+body {
+    margin: 10px 0;
+    padding: 0;
+    background-color: #cf9;
+    font-family: 'PT sans', sans-serif;
+    text-align: center;
+}
+
+main#container {
+    width: 770px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #ab4;
+    text-align: left;
+}
+
+h1#header {
+    height: 250px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin: 0;
+    
+}
+
+#header a {
+    background: url(../img/title.gif) no-repeat;
+    width: 400px;
+    height: 70px;
+    display: block; /* la propriété display et la valeur block transforment le lien "a inline" en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
+    position: relative;
+    top: 15px;
+    left: 350px;
+    text-indent: -5000px; /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche, il et décallé à gauche */
+}
+
+
+
+footer {
+    height: 60px;
+    line-height: 60px;
+}
