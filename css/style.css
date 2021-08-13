@@ -18,13 +18,13 @@ main#container {
 
 h1#header {
     height: 250px;
-    background: url(../img/apple.jpg) no-repeat left top;
+    background: url('../img/apple.jpg') no-repeat left top;
     margin: 0;
     
 }
 
 #header a {
-    background: url(../img/title.gif) no-repeat;
+    background: url('../img/title.gif') no-repeat;
     width: 400px;
     height: 70px;
     display: block; /* la propriété display et la valeur block transforment le lien "a inline" en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
@@ -34,9 +34,82 @@ h1#header {
     text-indent: -5000px; /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche, il et décallé à gauche */
 }
 
+/* La naviguation : ul-li */
 
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+    background: url('../img/bg_menu.gif') repeat-x 0 -25px; /* repeat-x répète l'élément uniquement à l'horizontal */
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    width: 130px;
+    line-height: 20px;
+    border-right: 2px solid #cf9;
+    text-decoration: none; /* Enleve le surlignement */
+    color: white;
+    font-weight: bold; /* Ajoute du gras au texte  */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+nav ul li a:hover {
+    background: url('../img/bg_menu.gif') repeat-x 0 0; /* Sur le :hover l'image se décale vers le bas */
+}
+
+/* Section : Le contenu principal */
+
+#principal {
+    /* Raccourci : background-image: url(../img/bg_page.gif) no-repeat 15px 15px ; */
+    background-image: url('../img/bg_page.gif');
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    padding: 0 30px 0 100px;
+}
+
+#principal h2 {
+    padding-left: 25px;
+    background: url('../img/little_apple.gif') no-repeat left center;
+}
+
+#principal h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 1px solid #9b2;
+    color: #9b2;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 1px solid #9b2;
+}
+
+#principal p {
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* footer : bas de page */
 
 footer {
+    background: #9b2;
     height: 60px;
     line-height: 60px;
+}
+
+footer p {
+    line-height: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    color: white;
 }
